@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <h1>LOGIN</h1>
+    <h6>Introduce tus datos correctamente</h6>
+    <form action="login.php" method="POST">
+        <label for="username">Usuario:</label>
+        <input type="text"id="username"name="username" requierd> <br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password"id="password"name="password" requierd><br><br>
+        <input type="submit"value="login">
+    </form>  -->
+
+    <nav>
+      
+      <ul class="menu">
+        <li><img width="50px" src="1-removebg-preview.png" alt=""></li>
+        <li><a href="#">Huerto vertical</a></li>
+        <li class="dropdown">
+          <a href="#">menu</a>
+          <div class="dropdown-content">
+            <a href="#">Registro de agua</a>
+            <a href="#">Status de luz</a>
+            <a href="#">Registrar humedad</a>
+            <a href="#">Registrar temperatura</a>
+            <a href="#">Sobre nosotros</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+</body>
+</html>
+
+<style>
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #20fb03;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu li {
+  position: relative;
+  
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #21b830;
+}
+
+/* Estilos del menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #28ae2d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(57, 180, 36, 0.2);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>

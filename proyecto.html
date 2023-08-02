@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- codigo para menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./assets/Logo.png" alt="" />
+                <h1>Huerto Vertical</h1>
+            </div>
+            <div class="botones">
+                <button class="op">
+                    Login
+                </button>
+                <button class="off">
+                    Registrar
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- codigo para el texto -->
+    <div class="title">
+        <p> <img width="50px" src="./assets/image (4).png" alt="">HUERTO VERTICAL EN UNIVERSIDAD TECNOLOGICA DE
+            CALVILLO
+        </p>
+    </div>
+    <div class="contendio">
+        <div class="flex-container">
+            <div class="datos">
+
+                <p>
+                    Los huertos verticales ofrecen una serie de beneficios,
+                    incluyendo el aprovechamiento del espacio, mejora de la calidad del aire,
+                    aislamiento acústico, mejora estética y producción de alimentos frescos. Estas funciones positivas
+                    hacen que
+                    los huertos verticales sean una opción atractiva para la agricultura urbana y la promoción de
+                    entornos más
+                    sostenibles.
+                </p>
+                <div class="puntos">
+                    <p>
+                        <img width="25px" src="./assets/bullet.png" alt="">
+                        Aprovechamiento del espacio
+                    </p>
+                    <p>
+                        <img width="25px" src="./assets/bullet.png" alt="">
+                        Mejora de la calidad
+                    </p>
+                    <p>
+                        <img width="25px" src="./assets/bullet.png" alt="">
+                        Cultivo de alimentos frescos
+                    </p>
+                </div>
+            </div>
+            <div class="imagenes">
+                <div class="imag1">
+                    <img src="./assets/image (1).png" alt="">
+
+                </div>
+                <div class="imag2">
+                    <img src="./assets/image (2).png" alt="">
+                </div>
+                <div class="imag3">
+                    <img src="./assets/image (112).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<style>
+    /* MENU */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: -10px;
+        border-bottom: 1px solid black;
+    }
+
+    .navbar .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: centers;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .navbar .logo img {
+        height: 60px;
+        margin: 0 8px 0 0;
+    }
+
+    button {
+
+        width: 100px;
+        height: 50px;
+
+
+        font-size: 16px;
+        background-color: #3498db;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        margin: 0px 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 50px;
+
+        transition: background-color 0.3s ease;
+    }
+
+    /* TEXTO */
+    .title {
+        margin-bottom: -20px;
+        
+            text-align: center;
+            border: 2px solid rgb(0, 0, 0);
+            display: block;
+            border-radius: 60px;
+            
+            margin-top: 10px;
+        
+    }
+
+    .contenido {
+        display: inline-block;
+        justify-content: center;
+
+    }
+
+    .datos {
+        margin-top: 20px;
+        margin-left: 15px;
+        
+        font-size: 35px;
+        border: 2px solid rgb(0, 0, 0);
+        display: inline-block;
+        border-radius: 80px;
+        margin: 50px;
+        
+    }
+
+    .datos p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .imagenes {
+        max-width: 100%;
+      height: auto;
+
+    }
+
+    .flex-container {
+        display: block;
+        justify-content: center;
+
+    }
+
+    .imag1,
+    .imag2 {
+        display: none;
+    }
+
+    .imag3 {
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .botones {
+        display: flex;
+
+    }
+
+    .op {
+        width: 100px;
+        height: 50px;
+
+        justify-content: right;
+        align-items: center;
+        text-align: center;
+    }
+
+    .off {
+        width: 100px;
+        height: 50px;
+
+        justify-content: right;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    button:hover {
+
+        background-color: #207ac4;
+
+    }
+
+    @media (min-width: 600px) {
+
+        /* DISENO DE MENU */
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: -10px;
+            border-bottom: 1px solid black;
+        }
+
+        .navbar .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: centers;
+            justify-content: center;
+            margin-left: 10px;
+        }
+
+        .navbar .logo img {
+            height: 60px;
+            margin: 0 8px 0 0;
+        }
+
+        /*  DISENO DE BOTON  */
+        button {
+
+            width: 100px;
+            height: 50px;
+
+
+            font-size: 16px;
+            background-color: #3498db;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            margin: 0px 5px;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 50px;
+
+            transition: background-color 0.3s ease;
+        }
+
+        .puntos {
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            justify-content: left;
+
+        }
+
+        button:hover {
+            background-color: #207ac4;
+
+        }
+
+        .off {
+            color: white;
+        }
+
+        .op {
+            color: white;
+
+        }
+
+        /* DISENO DEL TEXTO */
+
+        .title {
+            text-align: center;
+            border: 2px solid rgb(0, 0, 0);
+            display: block;
+            border-radius: 60px;
+            padding: 10px;
+            margin-top: 10px;
+           
+
+            font-size: 35px;
+
+        }
+
+        .contenido {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0px;
+
+        }
+
+        .datos {
+            
+            
+            flex-basis: 50%;
+            font-size: 35px;
+            border: 2px solid rgb(0, 0, 0);
+            display: inline-block;
+            border-radius: 80px;
+            padding: 10px;
+            margin: 50px;
+        }
+
+        .datos p {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .imagenes {
+            flex-basis: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .imag1,
+        .imag2 {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .imag3 {
+            width: 140%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imag1 img {
+            width: 100%;
+        }
+
+        .imag2 img {
+            width: 100%;
+        }
+
+        .imag3 img {
+            width: 80%;
+        }
+
+    }
+</style>
+<script>
+    const menuIcon = document.getElementById("menu-icon");
+    const porfileIcon = document.getElementById("porfile-icon");
+    const menu = document.getElementById("menu-container");
+
+    const viewMenu = () => {
+        var menuClosed = menu.classList.contains("hidden");
+
+        if (!menuClosed) {
+            menu.classList.add("visible");
+        }
+        console.log("Hola");
+
+        menu.classList.toggle("hidden");
+    };
+
+    menuIcon.addEventListener("click", viewMenu);
+
+</script>
